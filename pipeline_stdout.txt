@@ -1,0 +1,208 @@
+Report not found: C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035\scrubbing_report_filtered.csv
+  Saved: conn_gsr_off_1_sub-001_ses-1_task-music_acq-bailero_run-2_aal.png
+  Saved: conn_gsr_off_2_sub-001_ses-1_task-music_acq-bailero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_3_sub-001_ses-1_task-music_acq-bailero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_4_sub-001_ses-1_task-music_acq-bailero_run-2_schaefer100.png
+  Saved: conn_gsr_off_5_sub-001_ses-1_task-music_acq-glass_run-1_aal.png
+  Saved: conn_gsr_off_6_sub-001_ses-1_task-music_acq-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_7_sub-001_ses-1_task-music_acq-glass_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_8_sub-001_ses-1_task-music_acq-glass_run-1_schaefer100.png
+  Saved: conn_gsr_off_9_sub-001_ses-1_task-music_acq-personal1_run-4_aal.png
+  Saved: conn_gsr_off_10_sub-001_ses-1_task-music_acq-personal1_run-4_ho_cortical.png
+  Saved: conn_gsr_off_11_sub-001_ses-1_task-music_acq-personal1_run-4_ho_subcortical.png
+  Saved: conn_gsr_off_12_sub-001_ses-1_task-music_acq-personal1_run-4_schaefer100.png
+  Saved: conn_gsr_off_13_sub-001_ses-1_task-music_acq-personal2_run-5_aal.png
+  Saved: conn_gsr_off_14_sub-001_ses-1_task-music_acq-personal2_run-5_ho_cortical.png
+  Saved: conn_gsr_off_15_sub-001_ses-1_task-music_acq-personal2_run-5_ho_subcortical.png
+  Saved: conn_gsr_off_16_sub-001_ses-1_task-music_acq-personal2_run-5_schaefer100.png
+  Saved: conn_gsr_off_17_sub-001_ses-1_task-music_acq-tundra_run-3_aal.png
+  Saved: conn_gsr_off_18_sub-001_ses-1_task-music_acq-tundra_run-3_ho_cortical.png
+  Saved: conn_gsr_off_19_sub-001_ses-1_task-music_acq-tundra_run-3_ho_subcortical.png
+  Saved: conn_gsr_off_20_sub-001_ses-1_task-music_acq-tundra_run-3_schaefer100.png
+  Saved: conn_gsr_off_21_sub-001_ses-1_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_22_sub-001_ses-1_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_23_sub-001_ses-1_task-rest_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_24_sub-001_ses-1_task-rest_run-1_schaefer100.png
+  Saved: conn_gsr_off_25_sub-001_ses-2_task-glass_run-1_aal.png
+  Saved: conn_gsr_off_26_sub-001_ses-2_task-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_27_sub-001_ses-2_task-glass_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_28_sub-001_ses-2_task-glass_run-1_schaefer100.png
+  Saved: conn_gsr_off_29_sub-001_ses-2_task-music_acq-bailero_run-2_aal.png
+  Saved: conn_gsr_off_30_sub-001_ses-2_task-music_acq-bailero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_31_sub-001_ses-2_task-music_acq-bailero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_32_sub-001_ses-2_task-music_acq-bailero_run-2_schaefer100.png
+  Saved: conn_gsr_off_33_sub-001_ses-2_task-music_acq-glass_run-1_aal.png
+  Saved: conn_gsr_off_34_sub-001_ses-2_task-music_acq-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_35_sub-001_ses-2_task-music_acq-glass_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_36_sub-001_ses-2_task-music_acq-glass_run-1_schaefer100.png
+  Saved: conn_gsr_off_37_sub-001_ses-2_task-music_acq-personal1_run-3_aal.png
+  Saved: conn_gsr_off_38_sub-001_ses-2_task-music_acq-personal1_run-3_ho_cortical.png
+  Saved: conn_gsr_off_39_sub-001_ses-2_task-music_acq-personal1_run-3_ho_subcortical.png
+  Saved: conn_gsr_off_40_sub-001_ses-2_task-music_acq-personal1_run-3_schaefer100.png
+  Saved: conn_gsr_off_41_sub-001_ses-2_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_42_sub-001_ses-2_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_43_sub-001_ses-2_task-rest_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_44_sub-001_ses-2_task-rest_run-1_schaefer100.png
+  Saved: conn_gsr_off_45_sub-001_ses-3_task-music_acq-bailero_run-5_aal.png
+  Saved: conn_gsr_off_46_sub-001_ses-3_task-music_acq-bailero_run-5_ho_cortical.png
+  Saved: conn_gsr_off_47_sub-001_ses-3_task-music_acq-bailero_run-5_ho_subcortical.png
+  Saved: conn_gsr_off_48_sub-001_ses-3_task-music_acq-bailero_run-5_schaefer100.png
+  Saved: conn_gsr_off_49_sub-001_ses-3_task-music_acq-glass_run-2_aal.png
+  Saved: conn_gsr_off_50_sub-001_ses-3_task-music_acq-glass_run-2_ho_cortical.png
+  Saved: conn_gsr_off_51_sub-001_ses-3_task-music_acq-glass_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_52_sub-001_ses-3_task-music_acq-glass_run-2_schaefer100.png
+  Saved: conn_gsr_off_53_sub-001_ses-3_task-music_acq-personal1_run-7_aal.png
+  Saved: conn_gsr_off_54_sub-001_ses-3_task-music_acq-personal1_run-7_ho_cortical.png
+  Saved: conn_gsr_off_55_sub-001_ses-3_task-music_acq-personal1_run-7_ho_subcortical.png
+  Saved: conn_gsr_off_56_sub-001_ses-3_task-music_acq-personal1_run-7_schaefer100.png
+  Saved: conn_gsr_off_57_sub-001_ses-3_task-music_acq-personal2_run-6_aal.png
+  Saved: conn_gsr_off_58_sub-001_ses-3_task-music_acq-personal2_run-6_ho_cortical.png
+  Saved: conn_gsr_off_59_sub-001_ses-3_task-music_acq-personal2_run-6_ho_subcortical.png
+  Saved: conn_gsr_off_60_sub-001_ses-3_task-music_acq-personal2_run-6_schaefer100.png
+  Saved: conn_gsr_off_61_sub-001_ses-3_task-music_acq-tundra_run-4_aal.png
+  Saved: conn_gsr_off_62_sub-001_ses-3_task-music_acq-tundra_run-4_ho_cortical.png
+  Saved: conn_gsr_off_63_sub-001_ses-3_task-music_acq-tundra_run-4_ho_subcortical.png
+  Saved: conn_gsr_off_64_sub-001_ses-3_task-music_acq-tundra_run-4_schaefer100.png
+  Saved: conn_gsr_off_65_sub-001_ses-3_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_66_sub-001_ses-3_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_67_sub-001_ses-3_task-rest_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_68_sub-001_ses-3_task-rest_run-1_schaefer100.png
+  Saved: conn_gsr_off_69_sub-002_ses-1_task-music_acq-agami_run-3_aal.png
+  Saved: conn_gsr_off_70_sub-002_ses-1_task-music_acq-agami_run-3_ho_cortical.png
+  Saved: conn_gsr_off_71_sub-002_ses-1_task-music_acq-agami_run-3_ho_subcortical.png
+  Saved: conn_gsr_off_72_sub-002_ses-1_task-music_acq-agami_run-3_schaefer100.png
+  Saved: conn_gsr_off_73_sub-002_ses-1_task-music_acq-baliero_run-2_aal.png
+  Saved: conn_gsr_off_74_sub-002_ses-1_task-music_acq-baliero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_75_sub-002_ses-1_task-music_acq-baliero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_76_sub-002_ses-1_task-music_acq-baliero_run-2_schaefer100.png
+  Saved: conn_gsr_off_77_sub-002_ses-1_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_78_sub-002_ses-1_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_79_sub-002_ses-1_task-rest_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_80_sub-002_ses-1_task-rest_run-1_schaefer100.png
+  Saved: conn_gsr_off_81_sub-002_ses-2_task-music_acq-agami_run-3_aal.png
+  Saved: conn_gsr_off_82_sub-002_ses-2_task-music_acq-agami_run-3_ho_cortical.png
+  Saved: conn_gsr_off_83_sub-002_ses-2_task-music_acq-agami_run-3_ho_subcortical.png
+  Saved: conn_gsr_off_84_sub-002_ses-2_task-music_acq-agami_run-3_schaefer100.png
+  Saved: conn_gsr_off_85_sub-002_ses-2_task-music_acq-bailero_run-2_aal.png
+  Saved: conn_gsr_off_86_sub-002_ses-2_task-music_acq-bailero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_87_sub-002_ses-2_task-music_acq-bailero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_88_sub-002_ses-2_task-music_acq-bailero_run-2_schaefer100.png
+  Saved: conn_gsr_off_89_sub-002_ses-2_task-music_acq-glass_run-1_aal.png
+  Saved: conn_gsr_off_90_sub-002_ses-2_task-music_acq-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_91_sub-002_ses-2_task-music_acq-glass_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_92_sub-002_ses-2_task-music_acq-glass_run-1_schaefer100.png
+  Saved: conn_gsr_off_93_sub-002_ses-2_task-music_acq-salome_run-5_aal.png
+  Saved: conn_gsr_off_94_sub-002_ses-2_task-music_acq-salome_run-5_ho_cortical.png
+  Saved: conn_gsr_off_95_sub-002_ses-2_task-music_acq-salome_run-5_ho_subcortical.png
+  Saved: conn_gsr_off_96_sub-002_ses-2_task-music_acq-salome_run-5_schaefer100.png
+  Saved: conn_gsr_off_97_sub-002_ses-2_task-music_acq-tundra_run-4_aal.png
+  Saved: conn_gsr_off_98_sub-002_ses-2_task-music_acq-tundra_run-4_ho_cortical.png
+  Saved: conn_gsr_off_99_sub-002_ses-2_task-music_acq-tundra_run-4_ho_subcortical.png
+  Saved: conn_gsr_off_100_sub-002_ses-2_task-music_acq-tundra_run-4_schaefer100.png
+  Saved: conn_gsr_off_101_sub-002_ses-2_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_102_sub-002_ses-2_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_103_sub-002_ses-2_task-rest_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_104_sub-002_ses-2_task-rest_run-1_schaefer100.png
+  Saved: conn_gsr_off_105_sub-002_ses-3_task-music_acq-agami_run-3_aal.png
+  Saved: conn_gsr_off_106_sub-002_ses-3_task-music_acq-agami_run-3_ho_cortical.png
+  Saved: conn_gsr_off_107_sub-002_ses-3_task-music_acq-agami_run-3_ho_subcortical.png
+  Saved: conn_gsr_off_108_sub-002_ses-3_task-music_acq-agami_run-3_schaefer100.png
+  Saved: conn_gsr_off_109_sub-002_ses-3_task-music_acq-bailero_run-2_aal.png
+  Saved: conn_gsr_off_110_sub-002_ses-3_task-music_acq-bailero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_111_sub-002_ses-3_task-music_acq-bailero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_112_sub-002_ses-3_task-music_acq-bailero_run-2_schaefer100.png
+  Saved: conn_gsr_off_113_sub-002_ses-3_task-music_acq-glass_run-1_aal.png
+  Saved: conn_gsr_off_114_sub-002_ses-3_task-music_acq-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_115_sub-002_ses-3_task-music_acq-glass_run-1_ho_subcortical.png
+  Saved: conn_gsr_off_116_sub-002_ses-3_task-music_acq-glass_run-1_schaefer100.png
+  Saved: conn_gsr_off_117_sub-002_ses-3_task-rest_run-1_aal.png
+  Saved: conn_gsr_off_118_sub-002_ses-3_task-rest_run-1_ho_cortical.png
+  Saved: conn_gsr_off_119_sub-003_ses-1_task-music_acq-bailero_run-2_aal.png
+  Saved: conn_gsr_off_120_sub-003_ses-1_task-music_acq-bailero_run-2_ho_cortical.png
+  Saved: conn_gsr_off_121_sub-003_ses-1_task-music_acq-bailero_run-2_ho_subcortical.png
+  Saved: conn_gsr_off_122_sub-003_ses-1_task-music_acq-bailero_run-2_schaefer100.png
+  Saved: conn_gsr_off_123_sub-003_ses-1_task-music_acq-glass_run-1_aal.png
+  Saved: conn_gsr_off_124_sub-003_ses-1_task-music_acq-glass_run-1_ho_cortical.png
+  Saved: conn_gsr_off_125_sub-003_ses-1_task-music_acq-personal1_run-4_aal.png
+  Saved: conn_gsr_off_126_sub-003_ses-1_task-music_acq-personal1_run-4_ho_cortical.png
+  Saved: conn_gsr_off_127_sub-003_ses-1_task-music_acq-personal1_run-4_ho_subcortical.png
+  Saved: conn_gsr_off_128_sub-003_ses-1_task-music_acq-personal2_run-5_aal.png
+  Saved: conn_gsr_off_129_sub-003_ses-1_task-music_acq-personal2_run-5_ho_cortical.png
+  Saved: conn_gsr_off_130_sub-003_ses-1_task-music_acq-tundra_run-3_aal.png
+  Saved: conn_gsr_off_131_sub-003_ses-2_task-music_acq-tundra_run-2_aal.png
+  No timeseries CSVs found in C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_on_lpNone_a6_fd035
+
+Done. Matrices saved to C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035\connectivity_matrix_plots
+Batch started: 20260315_182513
+DATA_SOURCE=synfmap  TS_OUTPUT_SUBDIR=synfmap_GSR_off_lpNone_a6_fd035
+Log -> C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035\pipeline_log_20260315_182513.txt
+
+
+================================================================
+  Stage 1: Timeseries extraction
+================================================================
+  [SKIP] no confounds for sub-002_ses-1_task-music_acq-glass_run-1_glass_space-MNI152NLin2009cAsym_res-2_desc-preproc_bold.nii.gz
+
+--- GSR OFF  (62 runs) ---
+Extraction config -> C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035\extraction_config.json
+Found 62 BOLD run(s).  Output -> C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035
+Atlases: ['AtlasSpec', 'AtlasSpec', 'AtlasSpec', 'AtlasSpec']
+Workers: 4
+
+[ERROR] sub-001/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-001/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-002/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-002/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-002/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-003/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-1: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-2: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+[ERROR] sub-004/ses-3: A process in the process pool was terminated abruptly while the future was running or pending.
+
+================================================================
+  Stage 2a: GCOR + scrubbing dashboard
+================================================================
+
+================================================================
+  Stage 2b: Distance-dependent correlation (motion check)
+================================================================
+[WARNING] 'Stage 2b: Distance-dependent correlation (motion check)' exited with code 3221225477
+
+================================================================
+  Stage 3: Connectivity matrix heatmaps
+================================================================
+
+================================================================
+  Pipeline complete.
+  Outputs -> C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035
+  Log     -> C:\kpeSoundPath\KPE-fromtheheart\outputs\synfmap_GSR_off_lpNone_a6_fd035\pipeline_log_20260315_182513.txt
+================================================================
+

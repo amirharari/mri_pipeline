@@ -1,0 +1,29 @@
+# ── Generated data (never commit) ───────────────────────────────────────────
+outputs/
+
+# ── Downloaded atlas cache (scripts re-download when missing) ────────────────
+quality_assurance/atlases/
+
+# ── Python ───────────────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# ── Nilearn cache ────────────────────────────────────────────────────────────
+nilearn_cache/
+
+# ── Raw neuroimaging data (large, stored externally) ─────────────────────────
+*.nii
+*.nii.gz
+*.tsv
+
+# ── Notebooks ────────────────────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── OS / editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.zip
+.idea/workspace.xml
+.idea/usage.statistics.xml

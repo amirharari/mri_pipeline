@@ -1,0 +1,333 @@
+================================================================================
+ENTROPY CALCULATIONS: EXPLANATION FOR PUBLICATION FIGURES
+================================================================================
+
+This document explains the entropy calculations and analysis steps used in the
+publication-ready figures. All calculations are based on fMRI BOLD time series
+data from 116 AAL (Automated Anatomical Labeling) brain regions.
+
+================================================================================
+1. GLOBAL ENTROPY METRICS (Slide 1 - Panel A)
+================================================================================
+
+WHAT IT SHOWS:
+--------------
+A bar chart comparing Sample Entropy across three sessions:
+- Baseline (ses-1)
+- Psilocybin Session (ses-2)  
+- Follow-up (ses-3)
+
+CALCULATION STEPS:
+------------------
+1. Load the full time series for each of the 116 brain regions from each session
+   (e.g., ~600 timepoints per region for a 10-minute scan at TR=1 second)
+
+2. For each region in each session, calculate Sample Entropy:
+   
+   a. Take the region's BOLD signal time series (a sequence of numbers)
+   
+   b. Define two parameters:
+      - m = 2 (pattern length - we look for patterns of 2 consecutive values)
+      - r = 0.2 × standard deviation (tolerance for "similar" patterns)
+   
+   c. Create patterns: Extract all possible sequences of length m from the data
+      Example: If data is [1, 2, 3, 4, 5], patterns of length 2 are:
+               [1,2], [2,3], [3,4], [4,5]
+   
+   d. Count matches: For each pattern, count how many OTHER patterns are 
+      "similar" (within distance r). IMPORTANT: We exclude self-matches.
+   
+   e. Repeat for patterns of length m+1 (i.e., length 3)
+   
+   f. Calculate Sample Entropy:
+      SampleEntropy = -ln( (number of matches at length m+1) / 
+                          (number of matches at length m) )
+   
+   Interpretation: Higher Sample Entropy = more irregularity/complexity in
+                   the time series. Lower = more predictability/regularity.
+
+3. Average Sample Entropy across all 116 regions to get one global value per
+   session
+
+4. Display as bars: one bar per session showing the global mean Sample Entropy
+
+WHAT THE RESULTS MEAN:
+----------------------
+- If psilocybin session has higher entropy → brain signals are more irregular
+  and less predictable during psilocybin
+- This suggests increased neural complexity or variability
+
+================================================================================
+2. TIME-VARYING ENTROPY ANALYSIS (Slide 2)
+================================================================================
+
+WHAT IT SHOWS:
+--------------
+How entropy changes over time during the scan, using sliding windows
+
+CALCULATION STEPS:
+------------------
+1. Divide the full time series into overlapping windows:
+   - Window size: 30 seconds (30 timepoints at TR=1 second)
+   - Step size: 5 seconds (slide window by 5 timepoints each time)
+   - This creates ~107-115 windows from a 10-minute scan
+
+2. For each window, calculate entropy:
+   a. Extract the 30-second segment for each of the 116 regions
+   b. For each region, calculate Sample Entropy on just that 30-second window
+   c. This gives you entropy values per region per window
+
+3. Aggregate across regions:
+   a. For each window, calculate the mean entropy across all 116 regions
+   b. This gives one "mean entropy" value per time window
+
+4. Calculate variability over time:
+   a. Compute the standard deviation (STD) of entropy values across windows
+      for each region separately
+   b. This shows which regions have more variable entropy over the scan
+
+5. Visualize:
+   - Plot mean entropy over time (one line per session)
+   - Show rolling statistics (e.g., moving average, rolling STD)
+   - Display entropy variability as a summary statistic
+
+WHAT THE RESULTS MEAN:
+----------------------
+- Entropy over time shows dynamic changes in neural complexity during the scan
+- Higher variability = entropy changes more throughout the scan
+- Under psilocybin, we might see more pronounced fluctuations in entropy
+
+================================================================================
+3. REGIONAL ENTROPY DIFFERENCES (3D Brain Visualizations)
+================================================================================
+
+WHAT IT SHOWS:
+--------------
+A 3D brain surface map showing which brain regions have the largest entropy
+changes between psilocybin and baseline
+
+CALCULATION STEPS:
+------------------
+1. For each of the 116 AAL regions:
+   a. Calculate Sample Entropy for the FULL time series (entire scan) in:
+      - Baseline session
+      - Psilocybin session
+   
+   b. Compute the difference:
+      Difference = Psilocybin Entropy - Baseline Entropy
+
+2. Map differences to brain anatomy:
+   a. Load the AAL atlas (a 3D brain volume where each voxel is labeled with
+      its brain region)
+   
+   b. Load fsaverage brain surfaces (standard cortical surface mesh)
+   
+   c. For each surface vertex (point on the brain surface):
+      - Determine which AAL region it belongs to
+      - Assign that region's entropy difference value to the vertex
+      - Color-code: Red = increased entropy, Blue = decreased entropy
+
+3. Render the 3D brain:
+   - Use Plotly to create an interactive 3D surface
+   - Color scale: Red-White-Blue (RdBu_r)
+     * Red regions = entropy increased in psilocybin
+     * Blue regions = entropy decreased in psilocybin
+     * White/neutral = little or no change
+
+WHAT THE RESULTS MEAN:
+----------------------
+- Red regions: Higher entropy under psilocybin = more irregular/complex
+               neural activity in these areas
+- Blue regions: Lower entropy under psilocybin = more regular/predictable
+               activity
+- The visualization helps identify which brain systems/networks are most
+  affected by psilocybin
+
+================================================================================
+4. ANIMATED TIME-VARYING ENTROPY (HTML Animation)
+================================================================================
+
+WHAT IT SHOWS:
+--------------
+An animated side-by-side comparison showing how entropy VARIABILITY changes
+over time during the scan
+
+CALCULATION STEPS:
+------------------
+1. Create sliding windows (30 seconds, step 5 seconds) as in Section 2
+
+2. For each window:
+   a. Calculate Sample Entropy for each region in that window
+   b. This gives 116 entropy values per window per session
+
+3. Select the "best" windows:
+   a. Calculate mean entropy difference (psilocybin - baseline) for each window
+   b. Select the top 30 windows where psilocybin shows highest entropy
+      (largest positive differences)
+   c. This focuses on time periods with strongest psilocybin effects
+
+4. Build cumulative variability:
+   a. For each frame in the animation, accumulate entropy values from all
+      previous windows up to that point
+   
+   b. Calculate the STANDARD DEVIATION of accumulated entropy values for
+      each region
+   
+   c. This "cumulative STD" shows how much entropy has varied up to that
+      point in the scan
+   
+   d. Map these STD values to the brain surface
+
+5. Animate:
+   - Each frame shows cumulative STD at that point in the scan
+   - As animation progresses, more windows are included, so STD generally
+     increases (more data = potentially more variability)
+   - Side-by-side: Left = Baseline, Right = Psilocybin
+
+WHAT THE RESULTS MEAN:
+----------------------
+- The animation shows growing entropy variability over time
+- Regions that turn more red/yellow in psilocybin = higher variability in
+  entropy across windows
+- This suggests these regions have more dynamic, changing complexity under
+  psilocybin compared to baseline
+
+================================================================================
+5. EDGE WEIGHT ENTROPY (Connectivity Entropy)
+================================================================================
+
+WHAT IT SHOWS:
+--------------
+Shannon entropy of each ROI's connectivity profile - measures how "spread out"
+each region's connections are across other brain areas
+
+CALCULATION STEPS:
+------------------
+1. Compute correlation matrix:
+   a. Calculate pairwise correlations between all 116 regions
+   b. This gives a 116×116 matrix where each value is the correlation
+      between two regions' time series
+   c. Values range from -1 (opposite patterns) to +1 (synchronized patterns)
+
+2. For each ROI (row in the correlation matrix):
+   a. Take all correlations from that ROI to all other ROIs
+   b. Apply threshold: Only keep correlations with |r| > 0.1
+      (ignore very weak connections)
+   c. Convert correlations to probabilities:
+      - Normalize the absolute values so they sum to 1
+      - This creates a probability distribution over connections
+   
+   d. Calculate Shannon Entropy:
+      H_edge = -Σ(p_i × log2(p_i))
+      where p_i is the probability of connection i
+   
+   e. Interpretation:
+      - High H_edge: ROI connects evenly to many regions (high diversity/
+                     integration, less selective)
+      - Low H_edge: ROI has strong connections to only a few regions
+                    (high specificity, more selective)
+
+3. Compare between sessions:
+   a. Calculate H_edge for each ROI in baseline and psilocybin
+   b. Compute difference: H_edge_psilo - H_edge_baseline
+   c. Map differences to brain surface for visualization
+
+WHAT THE RESULTS MEAN:
+----------------------
+- Positive difference: ROI's connections become more evenly distributed under
+  psilocybin (more integration, less selective connectivity)
+- Negative difference: ROI's connections become more concentrated/focused under
+  psilocybin (more selective connectivity)
+- This measures changes in network topology/integration
+
+================================================================================
+6. NETWORK CONNECTIVITY ANALYSIS (Slide 1 - Panels B, C, D)
+================================================================================
+Note: This is NOT entropy, but functional connectivity. Included for completeness.
+
+WHAT IT SHOWS:
+--------------
+How brain networks (groups of regions working together) change connectivity
+under psilocybin
+
+CALCULATION STEPS:
+------------------
+1. Use Schaefer 100 atlas to group the 116 AAL regions into 7 networks:
+   - Visual (Vis)
+   - Somatomotor (SomMot)
+   - Dorsal Attention (DorsAttn)
+   - Ventral Attention (VAN)
+   - Limbic
+   - Frontoparietal (FPN)
+   - Default Mode Network (DMN)
+
+2. For each session:
+   a. Calculate correlation matrix between all pairs of regions (116×116)
+      - Correlation measures how synchronized two regions' signals are
+      - Values range from -1 (opposite patterns) to +1 (perfect sync)
+   
+   b. Group correlations:
+      - Within-network: Average correlations between regions in the SAME network
+      - Between-network: Average correlations between regions in DIFFERENT networks
+   
+   c. Use Fisher z-transform for averaging (reduces bias when averaging
+      correlation values)
+
+3. Compare across sessions:
+   - Calculate differences: Psilocybin - Baseline
+   - Lower connectivity = reduced synchronization between regions
+
+WHAT THE RESULTS MEAN:
+----------------------
+- Reduced within-network connectivity = less coordination within brain networks
+- This may indicate network breakdown or reorganization under psilocybin
+- Network-specific changes reveal which functional systems are most affected
+
+================================================================================
+TECHNICAL DETAILS
+================================================================================
+
+Data Preprocessing:
+- Motion correction and confound regression applied before entropy calculation
+- Outlier volumes (excessive motion) removed using Framewise Displacement >0.5mm
+- Confounds included: 6 motion parameters, aCompCor (5 components), derivatives
+
+Entropy Parameters:
+- Sample Entropy: m=2, r=0.2 (standard parameters for neuroimaging)
+- Alternative metrics tested: Spectral Entropy (frequency-domain analysis),
+  Approximate Entropy (older, less robust version of Sample Entropy)
+- Edge Weight Entropy: threshold=0.1 (only correlations |r| > 0.1 considered)
+
+Statistical Considerations:
+- All entropy values are computed on cleaned, preprocessed time series
+- Fisher z-transform used for correlation averaging
+- No statistical significance testing applied (single-subject case study)
+- Window-based analysis uses fixed histogram ranges for comparability
+
+Software:
+- Python 3.8+
+- Libraries: numpy, pandas, nilearn, plotly, scipy, matplotlib
+- Atlases: AAL (116 regions), Schaefer 2018 (100 regions, 7 networks)
+- Surfaces: fsaverage (FreeSurfer standard surface)
+
+================================================================================
+SUMMARY
+================================================================================
+
+The entropy analysis reveals how neural signal complexity/irregularity changes
+under psilocybin:
+
+1. GLOBAL: Overall entropy increases, suggesting greater neural complexity
+2. TEMPORAL: Entropy varies more over time, indicating dynamic effects
+3. REGIONAL: Specific brain regions (especially frontal and temporal areas) 
+   show the largest entropy increases
+4. CONNECTIVITY ENTROPY: Changes in how evenly regions distribute their
+   connections (integration vs. selectivity)
+5. NETWORK: Reduced connectivity within brain networks suggests network 
+   reorganization
+
+Together, these findings suggest psilocybin increases neural complexity and
+variability while reducing coordinated activity within canonical brain networks,
+potentially reflecting a more exploratory, less constrained brain state.
+
+================================================================================
