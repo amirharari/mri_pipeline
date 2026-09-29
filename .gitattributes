@@ -1,0 +1,2 @@
+psychopy_stimulus/*.mp4 filter=lfs diff=lfs merge=lfs -text
+psychopy_julien/*.mp4 filter=lfs diff=lfs merge=lfs -text

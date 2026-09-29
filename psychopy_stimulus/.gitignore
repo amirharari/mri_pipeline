@@ -1,0 +1,6 @@
+data/
+*_check.png
+*_lastrun.py
+*.log
+*.psydat
+__pycache__/
