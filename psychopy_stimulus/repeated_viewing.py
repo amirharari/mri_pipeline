@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.3),
-    on September 29, 2026, at 12:24
+    on September 29, 2026, at 12:26
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -374,6 +374,13 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # Start Code - component code to be run after the window creation
     
     # --- Initialize components for Routine "wait_for_5" ---
+    waiting_message = visual.TextStim(win=win, name='waiting_message',
+        text='waiting signal',
+        font='Arial',
+        units='height', pos=(0, 0), draggable=False, height=0.05, wrapWidth=None, ori=0.0, 
+        color='white', colorSpace='rgb', opacity=None, 
+        languageStyle='LTR',
+        depth=0.0);
     start_trigger = keyboard.Keyboard(deviceName='defaultKeyboard')
     
     # --- Initialize components for Routine "black_start" ---
@@ -438,7 +445,7 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     # create an object to store info about Routine wait_for_5
     wait_for_5 = data.Routine(
         name='wait_for_5',
-        components=[start_trigger],
+        components=[waiting_message, start_trigger],
     )
     wait_for_5.status = NOT_STARTED
     continueRoutine = True
@@ -477,6 +484,26 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
         tThisFlipGlobal = win.getFutureFlipTime(clock=None)
         frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
         # update/draw components on each frame
+        
+        # *waiting_message* updates
+        
+        # if waiting_message is starting this frame...
+        if waiting_message.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            waiting_message.frameNStart = frameN  # exact frame index
+            waiting_message.tStart = t  # local t and not account for scr refresh
+            waiting_message.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(waiting_message, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'waiting_message.started')
+            # update status
+            waiting_message.status = STARTED
+            waiting_message.setAutoDraw(True)
+        
+        # if waiting_message is active this frame...
+        if waiting_message.status == STARTED:
+            # update params
+            pass
         
         # *start_trigger* updates
         waitOnFlip = False

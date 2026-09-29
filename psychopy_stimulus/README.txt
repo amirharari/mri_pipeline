@@ -1,8 +1,10 @@
 Open repeated_viewing.psyexp in PsychoPy Builder and press Run.
 Choose 2 or 3 in the repetitions field. Default: 2.
-After confirming the dialog, a black screen waits indefinitely for a fresh
+After confirming the dialog, a black screen displays "waiting signal" in white
+at its center and waits indefinitely for a fresh
 press of the 5 key (keyboard or scanner sending 5). This starts the initial
 30-second black period. Later 5 presses do not restart the run.
+The message disappears on 5; the timed black periods contain no text.
 The trigger key and response time are saved by the start_trigger component.
 Automatic display refresh measurement is disabled to avoid startup hangs.
 The configured refresh estimate is 60 Hz, not a measured calibration.

@@ -1,8 +1,10 @@
 Open julien_viewing.psyexp in PsychoPy Builder and press Run.
 Keep julien_01m00s_to_10m05s.mp4 beside the experiment.
-After confirming the dialog, a black screen waits indefinitely for a fresh
+After confirming the dialog, a black screen displays "waiting signal" in white
+at its center and waits indefinitely for a fresh
 press of the 5 key (keyboard or scanner sending 5). This starts the sequence.
 Later 5 presses do not restart the run. Trigger key and response time are saved.
+The message disappears on 5; the timed black periods contain no text.
 Automatic display refresh measurement is disabled to avoid startup hangs.
 The configured refresh estimate is 60 Hz, not a measured calibration.
 Set it to the actual study display refresh rate before research acquisition.

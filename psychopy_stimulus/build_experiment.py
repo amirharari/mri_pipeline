@@ -4,6 +4,7 @@ from psychopy.experiment import Experiment
 from psychopy.experiment.components.movie import MovieComponent
 from psychopy.experiment.components.polygon import PolygonComponent
 from psychopy.experiment.components.keyboard import KeyboardComponent
+from psychopy.experiment.components.text import TextComponent
 
 root = Path(__file__).resolve().parent
 exp = Experiment()
@@ -33,6 +34,11 @@ def add_black_screen(name, position):
     exp.flow.addRoutine(black, position)
 
 wait = exp.addRoutine('wait_for_5')
+wait.addComponent(TextComponent(
+    exp, 'wait_for_5', name='waiting_message', text='waiting signal',
+    units='height', color='white', pos=(0, 0), letterHeight=0.05,
+    startVal=0, stopVal='',
+))
 wait.addComponent(KeyboardComponent(
     exp, 'wait_for_5', name='start_trigger', allowedKeys="'5'",
     registerOn='press', store='first key', forceEndRoutine=True,

@@ -4,6 +4,7 @@ from psychopy.experiment import Experiment
 from psychopy.experiment.components.movie import MovieComponent
 from psychopy.experiment.components.polygon import PolygonComponent
 from psychopy.experiment.components.keyboard import KeyboardComponent
+from psychopy.experiment.components.text import TextComponent
 
 root = Path(__file__).resolve().parent
 exp = Experiment()
@@ -25,6 +26,11 @@ for key, value in {
 for name in ['wait_for_5', 'black_start', 'viewing', 'black_end']:
     routine = exp.addRoutine(name)
     if name == 'wait_for_5':
+        routine.addComponent(TextComponent(
+            exp, name, name='waiting_message', text='waiting signal',
+            units='height', color='white', pos=(0, 0), letterHeight=0.05,
+            startVal=0, stopVal='',
+        ))
         component = KeyboardComponent(
             exp, name, name='start_trigger', allowedKeys="'5'",
             registerOn='press', store='first key', forceEndRoutine=True,
