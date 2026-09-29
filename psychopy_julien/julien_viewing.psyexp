@@ -38,11 +38,11 @@
     <Param val="" valType="str" updates="None" name="expVersion"/>
     <Param val="on Sync" valType="str" updates="None" name="exportHTML"/>
     <Param val="None" valType="str" updates="None" name="eyetracker"/>
-    <Param val="" valType="code" updates="None" name="frameRate"/>
+    <Param val="60" valType="code" updates="None" name="frameRate"/>
     <Param val="Attempting to measure frame rate of screen, please wait..." valType="str" updates="None" name="frameRateMsg"/>
     <Param val="PsychToolbox" valType="str" updates="None" name="keyboardBackend"/>
     <Param val="info" valType="code" updates="None" name="logging level"/>
-    <Param val="True" valType="bool" updates="None" name="measureFrameRate"/>
+    <Param val="False" valType="bool" updates="None" name="measureFrameRate"/>
     <Param val="MIDDLE_BUTTON" valType="list" updates="None" name="mgBlink"/>
     <Param val="CONTINUOUS" valType="str" updates="None" name="mgMove"/>
     <Param val="0.5" valType="num" updates="None" name="mgSaccade"/>

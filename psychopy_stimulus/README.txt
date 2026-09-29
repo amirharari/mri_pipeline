@@ -4,6 +4,9 @@ After confirming the dialog, a black screen waits indefinitely for a fresh
 press of the 5 key (keyboard or scanner sending 5). This starts the initial
 30-second black period. Later 5 presses do not restart the run.
 The trigger key and response time are saved by the start_trigger component.
+Automatic display refresh measurement is disabled to avoid startup hangs.
+The configured refresh estimate is 60 Hz, not a measured calibration.
+Set it to the actual study display refresh rate before research acquisition.
 The selected MP4 contains all presentations in one continuous file, including audio.
 PsychoPy shows a silent black screen for 30 seconds before the movie and
 another silent black screen for 30 seconds after it. The cursor is hidden.

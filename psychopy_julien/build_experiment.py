@@ -14,6 +14,8 @@ for key, value in {
     'Show info dlg': True,
     'Enable Escape': True,
     'Show mouse': False,
+    'measureFrameRate': False,
+    'frameRate': 60,
     'Units': 'height',
     'color': 'black',
     'Data filename': "'data/%s_%s' % (expInfo['participant'], expInfo['date'])",

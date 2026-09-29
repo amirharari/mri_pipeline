@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.3),
-    on September 29, 2026, at 12:17
+    on September 29, 2026, at 12:24
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -216,10 +216,7 @@ def setupWindow(expInfo=None, win=None):
         win.backgroundFit = 'none'
         win.units = 'height'
     if expInfo is not None:
-        # get/measure frame rate if not already in expInfo
-        if win._monitorFrameRate is None:
-            win._monitorFrameRate = win.getActualFrameRate(infoMsg='Attempting to measure frame rate of screen, please wait...')
-        expInfo['frameRate'] = win._monitorFrameRate
+        expInfo['frameRate'] = 60
     win.hideMessage()
     if PILOTING:
         # show a visual indicator if we're in piloting mode
