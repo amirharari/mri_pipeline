@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v2026.1.3),
-    on September 29, 2026, at 12:13
+    on September 29, 2026, at 12:17
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -375,6 +375,9 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     
     # Start Code - component code to be run after the window creation
     
+    # --- Initialize components for Routine "wait_for_5" ---
+    start_trigger = keyboard.Keyboard(deviceName='defaultKeyboard')
+    
     # --- Initialize components for Routine "black_start" ---
     black_start_screen = visual.Rect(
         win=win, name='black_start_screen',units='norm', 
@@ -432,6 +435,131 @@ def run(expInfo, thisExp, win, globalClock=None, thisSession=None):
     expInfo['expStart'] = data.getDateStr(
         format='%Y-%m-%d %Hh%M.%S.%f %z', fractionalSecondDigits=6
     )
+    
+    # --- Prepare to start Routine "wait_for_5" ---
+    # create an object to store info about Routine wait_for_5
+    wait_for_5 = data.Routine(
+        name='wait_for_5',
+        components=[start_trigger],
+    )
+    wait_for_5.status = NOT_STARTED
+    continueRoutine = True
+    # update component parameters for each repeat
+    # create starting attributes for start_trigger
+    start_trigger.keys = []
+    start_trigger.rt = []
+    _start_trigger_allKeys = []
+    # store start times for wait_for_5
+    wait_for_5.tStartRefresh = win.getFutureFlipTime(clock=globalClock)
+    wait_for_5.tStart = globalClock.getTime(format='float')
+    wait_for_5.status = STARTED
+    thisExp.addData('wait_for_5.started', wait_for_5.tStart)
+    wait_for_5.maxDuration = None
+    # keep track of which components have finished
+    wait_for_5Components = wait_for_5.components
+    for thisComponent in wait_for_5.components:
+        thisComponent.tStart = None
+        thisComponent.tStop = None
+        thisComponent.tStartRefresh = None
+        thisComponent.tStopRefresh = None
+        if hasattr(thisComponent, 'status'):
+            thisComponent.status = NOT_STARTED
+    # reset timers
+    t = 0
+    _timeToFirstFrame = win.getFutureFlipTime(clock="now")
+    frameN = -1
+    
+    # --- Run Routine "wait_for_5" ---
+    thisExp.currentRoutine = wait_for_5
+    wait_for_5.forceEnded = routineForceEnded = not continueRoutine
+    while continueRoutine:
+        # get current time
+        t = routineTimer.getTime()
+        tThisFlip = win.getFutureFlipTime(clock=routineTimer)
+        tThisFlipGlobal = win.getFutureFlipTime(clock=None)
+        frameN = frameN + 1  # number of completed frames (so 0 is the first frame)
+        # update/draw components on each frame
+        
+        # *start_trigger* updates
+        waitOnFlip = False
+        
+        # if start_trigger is starting this frame...
+        if start_trigger.status == NOT_STARTED and tThisFlip >= 0-frameTolerance:
+            # keep track of start time/frame for later
+            start_trigger.frameNStart = frameN  # exact frame index
+            start_trigger.tStart = t  # local t and not account for scr refresh
+            start_trigger.tStartRefresh = tThisFlipGlobal  # on global time
+            win.timeOnFlip(start_trigger, 'tStartRefresh')  # time at next scr refresh
+            # add timestamp to datafile
+            thisExp.timestampOnFlip(win, 'start_trigger.started')
+            # update status
+            start_trigger.status = STARTED
+            # keyboard checking is just starting
+            waitOnFlip = True
+            win.callOnFlip(start_trigger.clock.reset)  # t=0 on next screen flip
+            win.callOnFlip(start_trigger.clearEvents, eventType='keyboard')  # clear events on next screen flip
+        if start_trigger.status == STARTED and not waitOnFlip:
+            theseKeys = start_trigger.getKeys(keyList=['5'], ignoreKeys=["escape"], waitRelease=False)
+            _start_trigger_allKeys.extend(theseKeys)
+            if len(_start_trigger_allKeys):
+                start_trigger.keys = _start_trigger_allKeys[0].name  # just the first key pressed
+                start_trigger.rt = _start_trigger_allKeys[0].rt
+                start_trigger.duration = _start_trigger_allKeys[0].duration
+                # a response ends the routine
+                continueRoutine = False
+        
+        # check for quit (typically the Esc key)
+        if defaultKeyboard.getKeys(keyList=["escape"]):
+            thisExp.status = FINISHED
+        if thisExp.status == FINISHED or endExpNow:
+            endExperiment(thisExp, win=win)
+            return
+        # pause experiment here if requested
+        if thisExp.status == PAUSED:
+            pauseExperiment(
+                thisExp=thisExp, 
+                win=win, 
+                timers=[routineTimer, globalClock], 
+                currentRoutine=wait_for_5,
+            )
+            # skip the frame we paused on
+            continue
+        
+        # has a Component requested the Routine to end?
+        if not continueRoutine:
+            wait_for_5.forceEnded = routineForceEnded = True
+        # has the Routine been forcibly ended?
+        if wait_for_5.forceEnded or routineForceEnded:
+            break
+        # has every Component finished?
+        continueRoutine = False
+        for thisComponent in wait_for_5.components:
+            if hasattr(thisComponent, "status") and thisComponent.status != FINISHED:
+                continueRoutine = True
+                break  # at least one component has not yet finished
+        
+        # refresh the screen
+        if continueRoutine:  # don't flip if this routine is over or we'll get a blank screen
+            win.flip()
+    
+    # --- Ending Routine "wait_for_5" ---
+    for thisComponent in wait_for_5.components:
+        if hasattr(thisComponent, "setAutoDraw"):
+            thisComponent.setAutoDraw(False)
+    # store stop times for wait_for_5
+    wait_for_5.tStop = globalClock.getTime(format='float')
+    wait_for_5.tStopRefresh = tThisFlipGlobal
+    thisExp.addData('wait_for_5.stopped', wait_for_5.tStop)
+    # check responses
+    if start_trigger.keys in ['', [], None]:  # No response was made
+        start_trigger.keys = None
+    thisExp.addData('start_trigger.keys',start_trigger.keys)
+    if start_trigger.keys != None:  # we had a response
+        thisExp.addData('start_trigger.rt', start_trigger.rt)
+        thisExp.addData('start_trigger.duration', start_trigger.duration)
+    thisExp.nextEntry()
+    # the Routine "wait_for_5" was not non-slip safe, so reset the non-slip timer
+    routineTimer.reset()
     
     # --- Prepare to start Routine "black_start" ---
     # create an object to store info about Routine black_start

@@ -3,6 +3,7 @@ from pathlib import Path
 from psychopy.experiment import Experiment
 from psychopy.experiment.components.movie import MovieComponent
 from psychopy.experiment.components.polygon import PolygonComponent
+from psychopy.experiment.components.keyboard import KeyboardComponent
 
 root = Path(__file__).resolve().parent
 exp = Experiment()
@@ -29,7 +30,14 @@ def add_black_screen(name, position):
     ))
     exp.flow.addRoutine(black, position)
 
-add_black_screen('black_start', 0)
+wait = exp.addRoutine('wait_for_5')
+wait.addComponent(KeyboardComponent(
+    exp, 'wait_for_5', name='start_trigger', allowedKeys="'5'",
+    registerOn='press', store='first key', forceEndRoutine=True,
+    discardPrev=True, startVal=0, stopVal='',
+))
+exp.flow.addRoutine(wait, 0)
+add_black_screen('black_start', 1)
 routine = exp.addRoutine('viewing')
 movie = MovieComponent(
     exp, 'viewing', name='stimulus',
@@ -38,14 +46,14 @@ movie = MovieComponent(
     stopVal='', forceEndRoutine=True, loop=False, noAudio=False,
 )
 routine.addComponent(movie)
-exp.flow.addRoutine(routine, 1)
-add_black_screen('black_end', 2)
+exp.flow.addRoutine(routine, 2)
+add_black_screen('black_end', 3)
 path = root / 'repeated_viewing.psyexp'
 exp.saveToXML(str(path))
 loaded = Experiment()
 loaded.loadFromXML(str(path))
 assert len(loaded.routines['viewing']) >= 1
-assert [r.name for r in loaded.flow] == ['black_start', 'viewing', 'black_end']
+assert [r.name for r in loaded.flow] == ['wait_for_5', 'black_start', 'viewing', 'black_end']
 for name in ['black_start', 'black_end']:
     screen = next(c for c in loaded.routines[name] if c.type == 'Polygon')
     assert float(screen.params['stopVal'].val) == 30
