@@ -1,0 +1,8 @@
+data/
+*_check.jpg
+*_check.png
+*_lastrun.py
+*.log
+*.psydat
+__pycache__/
+*_4k.mp4
