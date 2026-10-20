@@ -27,3 +27,6 @@ Thumbs.db
 *.zip
 .idea/workspace.xml
 .idea/usage.statistics.xml
+
+# Standalone forest app is maintained in its own repository.
+psychopy_forest/
